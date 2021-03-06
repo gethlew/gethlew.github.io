@@ -424,8 +424,6 @@ footer {
   box-shadow: 10px 10px grey;;
 }
 
-/*
-
 footer {
   position: absolute;
   left: 15%;
@@ -440,13 +438,7 @@ footer {
   color: white;
   font-size: 30px;
 }
-*/
-footer{
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+
 }
 
 @media screen and (max-width: 700px) {
