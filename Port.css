@@ -1,5 +1,7 @@
 * {box-sizing: border-box}
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(122, 216, 233);
+}
 
 .container {
   position: relative;
@@ -21,13 +23,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   transform: translate(-50%,-50%);
   font-size: 30px;
 }
-/*
-.navbar {
-  width: 100%;
-  background-color: white;
-  overflow: auto;
-}
-*/
 .navbar a {
   float: center;
   padding: 20px;
@@ -42,73 +37,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .navbar a:hover {
   background-color: rgb(124, 121, 121);
 }
-
-#project1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 50%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 50%;
-  top: 220%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 220%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#projectsCSS {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 780px;
-  height: 750px;
-  box-shadow: 10px 10px grey;;
-}
-
 #intro {
   position: absolute;
   border-radius: 25px;
@@ -118,85 +46,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: #000;
   width: 780px;
   height: 180px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 180%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 350%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 520%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 700%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 880%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1070%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(255, 255, 255);
 }
 
 #about {
@@ -208,9 +59,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: #000;
   width: 980px;
   height: 350px;
-  box-shadow: 10px 10px grey;;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(255, 255, 255);
 }
-
 
 footer {
   position: absolute;
@@ -274,62 +125,6 @@ footer {
     background-color: rgb(124, 121, 121);
   }
 
-  
-#project1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 240%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 540%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 390%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
 footer {
   position: absolute;
   left: 15%;
@@ -358,86 +153,6 @@ footer {
   height: 230px;
   box-shadow: 10px 10px grey;;
 }
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 230%;
-  color: #000;
-  width: 580px;
-  height: 420px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 420%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 640%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 860%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1070%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1290%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-
-
 #about {
   position: absolute;
   border-radius: 25px;
@@ -493,85 +208,6 @@ footer {
     height: 300px;
     box-shadow: 10px 10px grey;;
   }
-  
-  #day1 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 15%;
-    top: 270%;
-    color: #000;
-    width: 500px;
-    height: 530px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day2 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 15%;
-    top: 530%;
-    color: #000;
-    width: 500px;
-    height: 610px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day3 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 15%;
-    top: 840%;
-    color: #000;
-    width: 500px;
-    height: 520px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day4 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 15%;
-    top: 1100%;
-    color: #000;
-    width: 500px;
-    height: 530px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1370%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1630%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
 #about {
   position: absolute;
   border-radius: 25px;
@@ -616,20 +252,6 @@ footer {
       transform: translate(-50%,-50%);
       font-size: 10px;
     }
-
-    
-#projectsCSS {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 580px;
-  height: 350px;
-  box-shadow: 10px 10px grey;;
-}
-
   
     #intro {
       position: absolute;
