@@ -63,6 +63,19 @@ background-color: rgb(122, 216, 233);
   background-color: rgb(255, 255, 255);
 }
 
+.asteroid{
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  color: #000;
+  width: 60%;
+  height: 220%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(255, 255, 255);
+}
+
 footer {
   position: absolute;
   left: 15%;
@@ -77,6 +90,8 @@ footer {
   color: white;
   font-size: 30px;
 }
+
+
 
 @media screen and (max-width: 1250px) {
   #about {
@@ -124,7 +139,17 @@ footer {
   .navbar a:hover {
     background-color: rgb(124, 121, 121);
   }
-
+  .asteroid{
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 15%;
+    color: #000;
+    height: 300%;
+    box-shadow: 10px 10px grey;
+    background-color: rgb(255, 255, 255);
+  }
 footer {
   position: absolute;
   left: 15%;
@@ -220,20 +245,19 @@ footer {
   box-shadow: 10px 10px grey;;
 }
 
-footer {
+.asteroid{
   position: absolute;
-  left: 3%;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  top: 500%;
-  margin-right: 40px;
-  background-color: rgb(122, 216, 233);
-  color: white;
-  font-size: 30px;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  color: #000;
+  width: 60%;
+  height: 420%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(255, 255, 255);
 }
+
   }
 
   @media screen and (max-width: 400px) {
