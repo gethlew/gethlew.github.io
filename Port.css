@@ -152,7 +152,7 @@ footer {
   }
 footer {
   position: absolute;
-  left: 15%;
+  left: 5%;
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 30px;
@@ -257,6 +257,7 @@ footer {
   box-shadow: 10px 10px grey;
   background-color: rgb(255, 255, 255);
 }
+
 
   }
 

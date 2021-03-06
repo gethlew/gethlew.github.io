@@ -79,9 +79,12 @@ background-color: rgb(122, 216, 233);
 
 footer {
   position: absolute;
-  left: 15%;
-  bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  left:10%;
+  top: 600%;
   background-color: rgb(122, 216, 233);
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
