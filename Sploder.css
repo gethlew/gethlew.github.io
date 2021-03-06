@@ -43,60 +43,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: rgb(124, 121, 121);
 }
 
-#project1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 50%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 50%;
-  top: 220%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
-#project3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 220%;
-  color: #000;
-  width: 350px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-  
-}
-
 #projectsCSS {
   position: absolute;
   border-radius: 25px;
@@ -105,7 +51,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   left: 15%;
   color: #000;
   width: 780px;
-  height: 750px;
+  height: 790px;
   box-shadow: 10px 10px grey;;
 }
 
@@ -121,84 +67,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   box-shadow: 10px 10px grey;;
 }
 
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 180%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 350%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 520%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 700%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 880%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1070%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
 #about {
   position: absolute;
   border-radius: 25px;
@@ -211,7 +79,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   box-shadow: 10px 10px grey;;
 }
 
-
+#splod {
+  position: absolute;
+  top: 170%;
+  width:  50%;
+  left: 18%;
+}
 footer {
   position: absolute;
   left: 15%;
@@ -220,7 +93,7 @@ footer {
   padding-top: 30px;
   padding-bottom: 50px;
   margin-bottom: 20px;
-  top: 360%;
+  top: 460%;
   margin-right: 40px;
   background-color: rgb(122, 216, 233);
   color: white;
@@ -235,8 +108,25 @@ footer {
     padding: 20px;
     left: 15%;
     color: #000;
-    width: 780px;
+    width: 80px;
     height: 350px;
+    box-shadow: 10px 10px grey;;
+  }
+  #splod {
+    position: absolute;
+    top: 180%;
+    width:  50%;
+    left: 25%;
+  }
+  #projectsCSS {
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 15%;
+    color: #000;
+    width: 780px;
+    height: 790px;
     box-shadow: 10px 10px grey;;
   }
 
@@ -290,7 +180,7 @@ footer {
 #splod {
   position: absolute;
   top: 180%;
-  width:  70%;
+  width:  50%;
   left: 15%;
 }
 
@@ -351,8 +241,8 @@ footer {
 
 #splod {
   position: absolute;
-  top: 230%;
-  width:  70%;
+  top: 220%;
+  width:  50%;
   left: 15%;
 }
 
@@ -428,7 +318,7 @@ footer {
   #splod {
     position: absolute;
     top: 270%;
-    width:  70%;
+    width:  50%;
     left: 15%;
   }
 #about {
@@ -492,7 +382,7 @@ footer {
 #splod {
   position: absolute;
   top: 420%;
-  width:  70%;
+  width:  40%;
   left: 15%;
 }
 
