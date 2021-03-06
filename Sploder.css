@@ -501,13 +501,16 @@ footer {
     padding: 20px;
     left: 5%;
     color: #000;
-    width: 380px;
+    width: 480px;
     height: 600px;
     box-shadow: 10px 10px grey;;
   }
   
   #splod {
-    top: 90%;
+    position: absolute;
+    top: 270%;
+    width:  70%;
+    left: 15%;
   }
   
   #day1 {
@@ -647,7 +650,10 @@ footer {
 }
 
 #splod {
-  top: 90%;
+  position: absolute;
+  top: 270%;
+  width:  70%;
+  left: 15%;
 }
 
 
@@ -683,7 +689,7 @@ footer {
     padding-bottom: 50px;
     margin-bottom: 20px;
     left:-20%;
-    top: 900%;
+    top: 700%;
     background-color: rgb(122, 216, 233);
     color: white;
     font-size: 20px;
