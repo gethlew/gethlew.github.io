@@ -67,24 +67,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
+  left: 10%;
   color: #000;
-  width: 780px;
-  height: 180px;
-  box-shadow: 10px 10px grey;
-  background-color: rgb(250, 250, 250);
-}
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 20%;
-  top: 180%;
-  color: #000;
-  width: 780px;
-  height: 450px;
+  width: 80%;
+  height: 80%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -94,16 +80,30 @@ body {font-family: Arial, Helvetica, sans-serif;
   width: 50%;
 }
 
+#day1 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 180%;
+  color: #000;
+  width: 70%;
+  height: 100%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
 #day2 {
   position: absolute;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
-  top: 350%;
+  left: 15%;
+  top: 290%;
   color: #000;
-  width: 780px;
-  height: 450px;
+  width: 70%;
+  height: 170%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -113,11 +113,11 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
-  top: 520%;
+  left: 15%;
+  top: 470%;
   color: #000;
-  width: 780px;
-  height: 450px;
+  width: 70%;
+  height: 100%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -127,11 +127,11 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
-  top: 700%;
+  left: 15%;
+  top: 580%;
   color: #000;
-  width: 780px;
-  height: 450px;
+  width: 70%;
+  height: 160%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -141,11 +141,11 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
-  top: 880%;
+  left: 15%;
+  top: 750%;
   color: #000;
-  width: 780px;
-  height: 450px;
+  width: 70%;
+  height: 160%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -155,10 +155,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 20%;
-  top: 1070%;
+  left: 15%;
+  top: 920%;
   color: #000;
-  width: 780px;
+  width: 70%;
   height: 450px;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
@@ -167,24 +167,11 @@ body {font-family: Arial, Helvetica, sans-serif;
 #days{
   position: absolute;
   left: 15%;
-  top: 1250%;
+  top: 1050%;
+  padding-bottom: 20%;
   
 }
 
-footer {
-  position: absolute;
-  left: 18%;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  top: 1340%;
-  margin-right: 40px;
-  background-color: rgb(122, 216, 233);
-  color: white;
-  font-size: 30px;
-}
 
 @media screen and (max-width: 1250px) {
 
@@ -202,120 +189,6 @@ footer {
   .navbar a:hover {
     background-color: rgb(124, 121, 121);
   }
-
-  
-#intro {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 780px;
-  height: 180px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 180%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 360%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 550%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 740%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 930%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1120%;
-  color: #000;
-  width: 780px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-
-  #days{
-    position: absolute;
-    left: 20%;
-    top: 1320%;
-    
-  }
-footer {
-  position: absolute;
-  left: 20%;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  top: 1380%;
-  margin-right: 180px;
-  background-color: rgb(122, 216, 233);
-  color: white;
-  font-size: 15px;
-}
-
 }
 @media screen and (max-width: 1000px) {
 
@@ -369,129 +242,6 @@ footer {
     transform: translate(-50%,-50%);
     font-size: 30px;
   }
-  
-
-#intro {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 580px;
-  height: 230px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 230%;
-  color: #000;
-  width: 580px;
-  height: 420px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 440%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 700%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 970%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1230%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1500%;
-  color: #000;
-  width: 580px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-#days{
-  position: absolute;
-  left: 20%;
-  top: 1750%;
-  
-}
-
-#about {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  color: #000;
-  width: 580px;
-  height: 250px;
-  box-shadow: 10px 10px grey;;
-}
-
-footer {
-  position: absolute;
-  left: 15%;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  top: 1800%;
-  margin-right: 40px;
-  background-color: rgb(122, 216, 233);
-  color: white;
-  font-size: 30px;
-}
 
 }
 
@@ -531,131 +281,6 @@ footer {
   position: absolute;
   top: 50%;
   left: 60%;
-}
-
-
-  #intro {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 15%;
-    color: #000;
-    width: 380px;
-    height: 300px;
-    box-shadow: 10px 10px grey;;
-  }
-  
-  #day1 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 5%;
-    top: 290%;
-    color: #000;
-    width: 500px;
-    height: 530px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day2 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 5%;
-    top: 600%;
-    color: #000;
-    width: 500px;
-    height: 610px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day3 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 5%;
-    top: 960%;
-    color: #000;
-    width: 500px;
-    height: 520px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  #day4 {
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
-    padding: 20px;
-    left: 5%;
-    top: 1270%;
-    color: #000;
-    width: 500px;
-    height: 530px;
-    box-shadow: 10px 10px grey;;
-  }
-
-  
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 5%;
-  top: 1580%;
-  color: #000;
-  width: 500px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 5%;
-  top: 1900%;
-  color: #000;
-  width: 500px;
-  height: 520px;
-  box-shadow: 10px 10px grey;;
-}
-
-#days{
-  position: absolute;
-  left: 10%;
-  top: 2230%;
-  
-}
-
-footer {
-  position: absolute;
-  left: 3%;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  top: 2300%;
-  margin-right: 40px;
-  background-color: rgb(122, 216, 233);
-  color: white;
-  font-size: 30px;
-}
-
-#about {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 5%;
-  color: #000;
-  width: 480px;
-  height: 300px;
-  box-shadow: 10px 10px grey;;
 }
   }
 
@@ -702,128 +327,4 @@ footer {
       left: 60%;
     }
   
-    
-#intro {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 10%;
-  color: #000;
-  width: 280px;
-  height: 340px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day1 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 10%;
-  top: 200%;
-  color: #000;
-  width: 280px;
-  height: 550px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day2 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 10%;
-  top: 380%;
-  color: #000;
-  width: 280px;
-  height: 1000px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day3 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 680%;
-  color: #000;
-  width: 280px;
-  height: 530px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 1700%;
-  color: #000;
-  width: 280px;
-  height: 880px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day5 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 2280%;
-  color: #000;
-  width: 280px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-#day6 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 2580%;
-  color: #000;
-  width: 280px;
-  height: 450px;
-  box-shadow: 10px 10px grey;;
-}
-
-
-  #days{
-    position: absolute;
-    width: 300px;
-    left: 20%;
-    top: 2920%;
-    
-  }
-    
-
-#about {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 5%;
-  color: #000;
-  width: 180px;
-  height: 550px;
-  box-shadow: 10px 10px grey;;
-}
-
-  footer {
-    position: absolute;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-    left:10%;
-    top: 3000%;
-    background-color: rgb(122, 216, 233);
-    color: white;
-    font-size: 20px;
-  }
     }
