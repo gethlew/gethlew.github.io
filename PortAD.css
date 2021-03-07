@@ -7,7 +7,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   position: relative;
   text-align: center;
   color: white;
-  height: 350px;
+  height: 400px;
 }
 
 .name {
@@ -721,7 +721,7 @@ footer {
   border: 2px solid #000000;
   padding: 20px;
   left: 10%;
-  top: 340%;
+  top: 200%;
   color: #000;
   width: 280px;
   height: 550px;
@@ -734,7 +734,7 @@ footer {
   border: 2px solid #000000;
   padding: 20px;
   left: 10%;
-  top: 710%;
+  top: 380%;
   color: #000;
   width: 280px;
   height: 1000px;
@@ -747,7 +747,7 @@ footer {
   border: 2px solid #000000;
   padding: 20px;
   left: 15%;
-  top: 1350%;
+  top: 680%;
   color: #000;
   width: 280px;
   height: 530px;
