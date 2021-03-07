@@ -7,10 +7,12 @@ background-color: rgb(122, 216, 233);
   position: relative;
   text-align: center;
   color: white;
+  height: 350px;
 }
+
 .name {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 50px;
@@ -18,11 +20,33 @@ background-color: rgb(122, 216, 233);
 
 .role {
   position: absolute;
-  top: 60%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 30px;
 }
+
+.email {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+}
+
+.lin {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  size: 10%;
+}
+
+.gi {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
 .navbar a {
   float: center;
   padding: 20px;
@@ -111,7 +135,7 @@ footer {
 @media screen and (max-width: 1100px) {
   .name {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     /*transform: translate(-50%,-50%);*/
     font-size: 30px;
@@ -119,7 +143,7 @@ footer {
 
   .role {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 20px;
@@ -139,6 +163,27 @@ footer {
   .navbar a:hover {
     background-color: rgb(124, 121, 121);
   }
+
+  .lin {
+    position: absolute;
+    top: 52%;
+    left: 5%;
+  }
+  
+  .gi {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+
+  .email {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+  }
+  
   .asteroid{
     position: absolute;
     border-radius: 25px;
@@ -208,19 +253,40 @@ footer {
 @media screen and (max-width: 700px) {
   .name {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     /*transform: translate(-50%,-50%);*/
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .role {
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 20px;
   }
+
+  
+.email {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+}
+
+.lin {
+  position: absolute;
+  top: 52%;
+  left: -20%;
+}
+
+.gi {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
 
   #intro {
     position: absolute;
@@ -262,12 +328,18 @@ footer {
   }
 
   @media screen and (max-width: 400px) {
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 320px;
+    }
     .name {
       position: absolute;
       top: 10%;
       left: 50%;
       /*transform: translate(-50%,-50%);*/
-      font-size: 15px;
+      font-size: 20px;
     }
   
     .role {
@@ -275,7 +347,27 @@ footer {
       top: 25%;
       left: 50%;
       transform: translate(-50%,-50%);
-      font-size: 10px;
+      font-size: 15px;
+    }
+
+    .email {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 15px;
+    }
+
+    .lin {
+      position: absolute;
+      top: 52%;
+      left: -20%;
+    }
+    
+    .gi {
+      position: absolute;
+      top: 50%;
+      left: 60%;
     }
   
     #intro {

@@ -660,12 +660,18 @@ footer {
   }
 
   @media screen and (max-width: 400px) {
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 320px;
+    }
     .name {
       position: absolute;
       top: 10%;
       left: 50%;
       /*transform: translate(-50%,-50%);*/
-      font-size: 15px;
+      font-size: 20px;
     }
   
     .role {
@@ -673,9 +679,29 @@ footer {
       top: 25%;
       left: 50%;
       transform: translate(-50%,-50%);
-      font-size: 10px;
+      font-size: 15px;
     }
 
+    .email {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 15px;
+    }
+
+    .lin {
+      position: absolute;
+      top: 52%;
+      left: -20%;
+    }
+    
+    .gi {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+    }
+  
     
 #intro {
   position: absolute;
