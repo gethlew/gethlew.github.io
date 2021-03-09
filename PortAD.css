@@ -26,27 +26,6 @@ body {font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
 
-.email {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 30px;
-}
-
-.lin {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  size: 10%;
-}
-
-.gi {
-  position: absolute;
-  top: 50%;
-  left: 70%;
-}
-
 .navbar a {
   float: center;
   padding: 20px;
@@ -236,6 +215,21 @@ body {font-family: Arial, Helvetica, sans-serif;
   
 }
 
+#bottom{
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 70%;
+    height: 70%;
+    top: 300%;
+    box-shadow: 10px 10px grey;
+    background-color: rgb(122, 216, 233);
+}
+
 #gameImg{
   width: 100%;
 }
@@ -393,27 +387,6 @@ body {font-family: Arial, Helvetica, sans-serif;
   .navbar a:hover {
     background-color: rgb(124, 121, 121);
   }
-
-  .lin {
-    position: absolute;
-    top: 52%;
-    left: 5%;
-  }
-  
-  .gi {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-  }
-
-  .email {
-    position: absolute;
-    top: 400%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
-  }
-
   
 #project1 {
   position: absolute;
@@ -502,31 +475,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   }
 
   
-.email {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 30px;
-}
 
-.lin {
-  position: absolute;
-  top: 52%;
-  left: -20%;
-}
-
-.gi {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-}
-
-.contact{
-  position: absolute;
-  top: 50%;
-  left: 60%;
-}
 
 
  
@@ -610,25 +559,6 @@ body {font-family: Arial, Helvetica, sans-serif;
       font-size: 15px;
     }
 
-    .email {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      font-size: 15px;
-    }
-
-    .lin {
-      position: absolute;
-      top: 52%;
-      left: -20%;
-    }
-    
-    .gi {
-      position: absolute;
-      top: 50%;
-      left: 60%;
-    }
     
 #project1 {
   position: absolute;
