@@ -408,10 +408,10 @@ body {font-family: Arial, Helvetica, sans-serif;
 
   .email {
     position: absolute;
-    top: 400%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 50px;
+    font-size: 30px;
   }
 
   
@@ -517,12 +517,6 @@ body {font-family: Arial, Helvetica, sans-serif;
 }
 
 .gi {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-}
-
-.contact{
   position: absolute;
   top: 50%;
   left: 60%;
