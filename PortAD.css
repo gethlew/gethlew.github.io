@@ -643,6 +643,15 @@ body {font-family: Arial, Helvetica, sans-serif;
   height: 550px;
   box-shadow: 10px 10px grey;;
 }
+
+#bottom{
+  position: absolute;
+  font-size: 15px;
+  width: 90%;
+  height: 70%;
+  top: 500%;
+  left: 5%;
+}
  
   
     }
