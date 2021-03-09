@@ -440,7 +440,17 @@ body {font-family: Arial, Helvetica, sans-serif;
   width: 550px;
   height: 350px;
   box-shadow: 10px 10px grey;;
+
   
+  
+}
+#bottom{
+  position: absolute;
+  font-size: 30px;
+  width: 90%;
+  height: 70%;
+  top: 500%;
+  left: 5%;
 }
 
 
@@ -474,7 +484,14 @@ body {font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
 
-  
+  #bottom{
+    position: absolute;
+    font-size: 30px;
+    width: 90%;
+    height: 70%;
+    top: 500%;
+    left: 5%;
+}
 
 
 
@@ -484,7 +501,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 10%;
+  left: 5%;
   color: #000;
   width: 450px;
   height: 350px;
@@ -497,7 +514,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 10%;
+  left: 5%;
   top: 190%;
   color: #000;
   width: 450px;
@@ -511,8 +528,8 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 10%;
-  top: 290%;
+  left: 5%;
+  top: 390%;
   color: #000;
   width: 450px;
   height: 350px;
@@ -525,8 +542,8 @@ body {font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  left: 10%;
-  top: 190%;
+  left: 5%;
+  top: 290%;
   color: #000;
   width: 450px;
   height: 350px;
