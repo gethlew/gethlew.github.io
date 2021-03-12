@@ -230,6 +230,21 @@ body {font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(122, 216, 233);
 }
 
+#bottomAdv{
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  width: 70%;
+  height: 130%;
+  top: 1600%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(122, 216, 233);
+}
+
 #gameImg{
   width: 100%;
 }
@@ -705,6 +720,21 @@ body {font-family: Arial, Helvetica, sans-serif;
     left: 5%;
 }
 
+#bottomAdv{
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 70%;
+  height: 130%;
+  top: 1900%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(122, 216, 233);
+}
+
 
 
  
@@ -960,6 +990,21 @@ body {font-family: Arial, Helvetica, sans-serif;
   top: 2300%;
   padding-bottom: 20%;
   
+}
+
+#bottomAdv{
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 70%;
+  height: 130%;
+  top: 2500%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(122, 216, 233);
 }
 
 /*
