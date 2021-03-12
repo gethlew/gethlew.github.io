@@ -7,12 +7,12 @@ body {font-family: Arial, Helvetica, sans-serif;
   position: relative;
   text-align: center;
   color: white;
-  height: 400px;
+  height: 30%;
 }
 
 .name {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 50px;
@@ -20,7 +20,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 .role {
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 30px;
@@ -129,10 +129,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   border: 2px solid #000000;
   padding: 20px;
   left: 15%;
-  top: 180%;
+  top: 200%;
   color: #000;
   width: 70%;
-  height: 100%;
+  height: 150%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -143,10 +143,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   border: 2px solid #000000;
   padding: 20px;
   left: 15%;
-  top: 290%;
+  top: 370%;
   color: #000;
   width: 70%;
-  height: 170%;
+  height: 180%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -157,21 +157,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   border: 2px solid #000000;
   padding: 20px;
   left: 15%;
-  top: 470%;
-  color: #000;
-  width: 70%;
-  height: 100%;
-  box-shadow: 10px 10px grey;
-  background-color: rgb(250, 250, 250);
-}
-
-#day4 {
-  position: absolute;
-  border-radius: 25px;
-  border: 2px solid #000000;
-  padding: 20px;
-  left: 15%;
-  top: 580%;
+  top: 570%;
   color: #000;
   width: 70%;
   height: 160%;
@@ -179,7 +165,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(250, 250, 250);
 }
 
-#day5 {
+#day4 {
   position: absolute;
   border-radius: 25px;
   border: 2px solid #000000;
@@ -193,16 +179,30 @@ body {font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(250, 250, 250);
 }
 
+#day5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 930%;
+  color: #000;
+  width: 70%;
+  height: 160%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
 #day6 {
   position: absolute;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
   left: 15%;
-  top: 920%;
+  top: 1120%;
   color: #000;
   width: 70%;
-  height: 450px;
+  height: 160%;
   box-shadow: 10px 10px grey;
   background-color: rgb(250, 250, 250);
 }
@@ -210,7 +210,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 #days{
   position: absolute;
   left: 15%;
-  top: 1050%;
+  top: 1360%;
   padding-bottom: 20%;
   
 }
@@ -373,6 +373,19 @@ body {font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
 
+  #intro {
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 10%;
+    color: #000;
+    width: 80%;
+    height: 90%;
+    box-shadow: 10px 10px grey;
+    background-color: rgb(250, 250, 250);
+  }
+
   .navbar a {
     float: center;
     padding: 10px;
@@ -444,6 +457,100 @@ body {font-family: Arial, Helvetica, sans-serif;
   
   
 }
+
+
+#day1 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 200%;
+  color: #000;
+  width: 70%;
+  height: 180%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day2 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 400%;
+  color: #000;
+  width: 70%;
+  height: 200%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day3 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 620%;
+  color: #000;
+  width: 70%;
+  height: 190%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day4 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 840%;
+  color: #000;
+  width: 70%;
+  height: 180%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 1050%;
+  color: #000;
+  width: 70%;
+  height: 160%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day6 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 1240%;
+  color: #000;
+  width: 70%;
+  height: 180%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#days{
+  position: absolute;
+  left: 15%;
+  top: 1460%;
+  padding-bottom: 20%;
+  
+}
+
 #bottom{
   position: absolute;
   font-size: 30px;
@@ -476,6 +583,19 @@ body {font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
 
+  #intro {
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    left: 10%;
+    color: #000;
+    width: 80%;
+    height: 160%;
+    box-shadow: 10px 10px grey;
+    background-color: rgb(250, 250, 250);
+  }
+
   .role {
     position: absolute;
     top: 30%;
@@ -483,6 +603,98 @@ body {font-family: Arial, Helvetica, sans-serif;
     transform: translate(-50%,-50%);
     font-size: 20px;
   }
+  
+#day1 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 280%;
+  color: #000;
+  width: 70%;
+  height: 200%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day2 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 500%;
+  color: #000;
+  width: 70%;
+  height: 270%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day3 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 800%;
+  color: #000;
+  width: 70%;
+  height: 210%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day4 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 1030%;
+  color: #000;
+  width: 70%;
+  height: 200%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 1260%;
+  color: #000;
+  width: 70%;
+  height: 200%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#day6 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 1500%;
+  color: #000;
+  width: 70%;
+  height: 230%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(250, 250, 250);
+}
+
+#days{
+  position: absolute;
+  left: 15%;
+  top: 1750%;
+  padding-bottom: 20%;
+  
+}
 
   #bottom{
     position: absolute;
