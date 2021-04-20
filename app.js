@@ -79,9 +79,12 @@ class App{
             object.position.y = this.random( -2, 2 );
             object.position.z = this.random( -2, 2 );
 
+            //adds the object to a preivously initialised room
             this.room.add( object );
         }
         
+        //creates a "highlight" which surrounds an object when a controller is pointed towards it.
+        //It takes the previously created "geometry" object and uses it as a parameter.
         this.highlight = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( { color: 0xffffff, side: THREE.BackSide } ) );
         this.highlight.scale.set(1.2, 1.2, 1.2);
         this.scene.add(this.highlight);
@@ -94,14 +97,17 @@ class App{
         
         const self = this;
         
+        //intialises vr controllers
         this.controllers = this.buildControllers();
         
+        //Called when button is pressed on vr controller
         function onSelectStart() {
             
             this.children[0].scale.z = 10;
             this.userData.selectPressed = true;
         }
 
+        //Called when button is released on vr controller
         function onSelectEnd() {
 
             this.children[0].scale.z = 0;
@@ -110,6 +116,7 @@ class App{
             
         }
         
+        //For each controller the above functions are repeated
         this.controllers.forEach( (controller) => {
             controller.addEventListener( 'selectstart', onSelectStart );
             controller.addEventListener( 'selectend', onSelectEnd );
@@ -120,6 +127,8 @@ class App{
     buildControllers() {
         const controllerModelFactory = new XRControllerModelFactory();
 
+        //A line which will protrude from the point of the controller
+        //The line is used to select objects using VR controllers
         const geometry = new THREE.BufferGeometry().setFromPoints( [ new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 0, 0, - 1 ) ] );
 
         const line = new THREE.Line( geometry );
