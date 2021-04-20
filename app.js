@@ -65,10 +65,14 @@ class App{
         this.room.geometry.translate( 0, 3, 0 );
         this.scene.add( this.room );
         
+        // Below code creates the objects viewable in the scene.
         const geometry = new THREE.IcosahedronBufferGeometry( this.radius );
 
+        //for loop which is used to render 200 of the above object.
         for ( let i = 0; i < 200; i ++ ) {
 
+            //creates a "geometry" instance and gives it a random color, position and rotation
+            //Due to the above for loop, the following lines of code are repeated 200 times.
             const object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } ) );
 
             object.position.x = this.random( -2, 2 );
