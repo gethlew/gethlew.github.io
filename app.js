@@ -90,6 +90,8 @@ class App{
         
         this.controllers = this.buildControllers();
 
+        const self = this;
+
         function onSelectStart(){
             this.children[0].scale.z = 10;
             this.userData.selectPressed = true;
