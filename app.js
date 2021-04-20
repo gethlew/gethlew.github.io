@@ -88,16 +88,18 @@ class App{
         
         const button = new VRButton( this.renderer );
         
-        this.controllers = this.buildControllers();
-
         const self = this;
 
+        this.controllers = this.buildControllers();
+
         function onSelectStart(){
+
             this.children[0].scale.z = 10;
             this.userData.selectPressed = true;
         }
 
         function onSelectEnd(){
+
             this.children[0].scale.z = 0 ;
             self.highlight.visible = false;
             this.userData.selectPressed = false;
@@ -118,6 +120,7 @@ class App{
             new THREE.Vector3(0,0,0),
             new THREE.Vector3(0,0,-1)
         ]);
+
         const line = new THREE.Line( geometry );
         line.name = 'line';
         line.scale.z = 0;
@@ -154,7 +157,7 @@ class App{
             const intersects = this.raycaster.intersectObjects( this.room.children );
 
             if (intersects.length>0){
-                intersects[0].object.add( this.highlight );
+                intersects[0].object.add(this.highlight);
                 this.highlight.visible = true;
                 controller.children[0].sclae.z = intersects[0].distance;
             }else{
