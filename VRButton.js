@@ -88,7 +88,7 @@ class VRButton{
 
             currentSession = null;
 
-        }
+        };
 
         button.onclick = function(){
             if ( currentSession === null){
@@ -97,7 +97,7 @@ class VRButton{
             }else{
                 currentSession.end();
             }
-        }
+        };
     }
 
     disableButton( button ) {
