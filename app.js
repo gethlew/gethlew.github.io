@@ -137,6 +137,7 @@ class App{
         
         const controllers = [];
         
+        //For loop executes as many times as there are VR controllers.
         for(let i=0; i<=1; i++){
             const controller = this.renderer.xr.getController( i );
             controller.add( line.clone() );
@@ -156,13 +157,20 @@ class App{
     
     handleController( controller ){
         if (controller.userData.selectPressed ){
+            //The line extending out of the controller is extended for 10 meters
             controller.children[0].scale.z = 10;
 
+            //Gets the position of the VR Controller and applies it to a variable
             this.workingMatrix.identity().extractRotation( controller.matrixWorld );
 
+            //Gets the origin from the position of the VR Controller and applies
+            //it to a variable.
             this.raycaster.ray.origin.setFromMatrixPosition( controller.matrixWorld );
+            
+            //Applies the position of the ray/line, to the position of the controller
             this.raycaster.ray.direction.set( 0, 0, - 1 ).applyMatrix4( this.workingMatrix );
 
+            //An array of objects which intersect with the line/ray
             const intersects = this.raycaster.intersectObjects( this.room.children );
 
             if (intersects.length>0){
