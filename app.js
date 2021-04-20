@@ -171,13 +171,18 @@ class App{
             this.raycaster.ray.direction.set( 0, 0, - 1 ).applyMatrix4( this.workingMatrix );
 
             //An array of objects which intersect with the line/ray
+            //Array is arranged by which objects are closest to the controller, with the 
+            //object that is closest to the controller first.
             const intersects = this.raycaster.intersectObjects( this.room.children );
 
+            //If statetment where if one or more objects are in the above array
+            //A hilight is added to the first object within the array.
             if (intersects.length>0){
                 intersects[0].object.add(this.highlight);
                 this.highlight.visible = true;
                 controller.children[0].scale.z = intersects[0].distance;
             }else{
+                //If there are no intersections, highlight doesn't appear.
                 this.highlight.visible = false;
             }
         }
