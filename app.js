@@ -1,5 +1,5 @@
 import * as THREE from '../../libs/three/three.module.js';
-import { VRButton } from './VRButton.js';
+import { VRButton } from '../../libs/VRButton.js';
 import { XRControllerModelFactory } from '../../libs/three/jsm/XRControllerModelFactory.js';
 import { BoxLineGeometry } from '../../libs/three/jsm/BoxLineGeometry.js';
 import { Stats } from '../../libs/stats.module.js';
@@ -38,8 +38,12 @@ class App{
         
         this.stats = new Stats();
         
+        this.raycaster = new THREE.Raycaster();
+        this.workingMatrix = new THREE.Matrix4();
+        this.workingVector = new THREE.Vector3();
+        
         this.initScene();
-        this.setupVR();
+        this.setupXR();
         
         window.addEventListener('resize', this.resize.bind(this) );
         
@@ -60,7 +64,7 @@ class App{
         this.room.geometry.translate( 0, 3, 0 );
         this.scene.add( this.room );
         
-        const geometry = new THREE.IcosahedronBufferGeometry( this.radius );
+        const geometry = new THREE.IcosahedronBufferGeometry( this.radius, 2 );
 
         for ( let i = 0; i < 200; i ++ ) {
 
@@ -71,14 +75,91 @@ class App{
             object.position.z = this.random( -2, 2 );
 
             this.room.add( object );
-
         }
+
+        this.highlight = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.BackSide }));
+        this.highlight.scale.set(1.2,1.2,1.2);
+        this.scene.add( this.highlight );
+        
     }
     
-    setupVR(){
+    setupXR(){
         this.renderer.xr.enabled = true;
+        
         const button = new VRButton( this.renderer );
+        
+        this.controllers = this.buildControllers();
+
+        function onSelectStart(){
+            this.children[0].scale.z = 10;
+            this.userData.selectPressed = true;
+        }
+
+        function onSelectEnd(){
+            this.children[0].scale.z = 0 ;
+            self.highlight.visible = false;
+            this.userData.selectPressed = false;
+        }
+
+        this.controllers.forEach((controller) => {
+            controller.addEventListener( 'selectstart', onSelectStart);
+            controller.addEventListener( 'selectend', onSelectEnd);
+
+        });
+        
     }
+    
+    buildControllers(){
+        const controllerModelFactory = new XRControllerModelFactory();
+        
+        const geometry = new THREE.BufferGeometry().setFromPoints( [
+            new THREE.Vector3(0,0,0),
+            new THREE.Vector3(0,0,-1)
+        ]);
+        const line = new THREE.Line( geometry );
+        line.name = 'line';
+        line.scale.z = 0;
+        
+        const controllers = [];
+        
+        for(let i=0; i<=1; i++){
+            const controller = this.renderer.xr.getController( i );
+            controller.add( line.clone() );
+            controller.userData.selectPressed = false;
+            this.scene.add(controller);
+            
+            controllers.push( controller );
+            
+            const grip = this.renderer.xr.getControllerGrip( i );
+            grip.add( controllerModelFactory.createControllerModel( grip ));
+            this.scene.add( grip );
+        }
+        
+        return controllers;
+    }
+    
+    handleController( controller ){
+        if (controller.userData.selectPressed){
+            controller.children[0].scale.z = 10;
+
+            this.workingMatrix.identity().extractRotation( controller.matrixWorld );
+
+            this.raycaster.ray.origin.setFromMatrixPosition( controller.matrixWorld );
+
+            this.raycaster.ray.direction.set(0,0,-1).applyMatrix4(
+                controller.matrixWorld);
+
+            const intersects = this.raycaster.intersectObjects( this.room.children );
+
+            if (intersects.length>0){
+                intersects[0].object.add( this.highlight );
+                this.highlight.visible = true;
+                controller.children[0].sclae.z = intersects[0].distance;
+            }else{
+                this.highlight.visible = false;
+        }
+    }
+}
     
     resize(){
         this.camera.aspect = window.innerWidth / window.innerHeight;
@@ -88,6 +169,13 @@ class App{
     
 	render( ) {   
         this.stats.update();
+        
+        if (this.controllers ){
+            const self = this;
+            this.controllers.forEach( ( controller) => { 
+                self.handleController( controller ) 
+            });
+        }
         
         this.renderer.render( this.scene, this.camera );
     }
