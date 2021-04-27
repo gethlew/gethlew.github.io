@@ -65,7 +65,7 @@ class App{
         this.room.geometry.translate( 0, 3, 0 );
         this.scene.add( this.room );
         
-        const geometry = new THREE.IcosahedronBufferGeometry( this.radius, 2 );
+        const geometry = new THREE.IcosahedronBufferGeometry( this.radius);
 
         for ( let i = 0; i < 200; i ++ ) {
 
