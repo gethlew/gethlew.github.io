@@ -66,7 +66,7 @@ class App{
         this.scene.add( this.room );
         
         // Below code creates the objects viewable in the scene.
-        const geometry = new THREE.IcosahedronBufferGeometry( this.radius );
+        const geometry = new THREE.IcosahedronBufferGeometry( this.radius , 2);
 
         //for loop which is used to render 200 of the above object.
         for ( let i = 0; i < 200; i ++ ) {
