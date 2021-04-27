@@ -150,7 +150,7 @@ class App{
                     self.spotlight = new THREE.Group();
 
                     //Creates a spotlight which emmits from the controller
-                    const spotlight = new THREE.Spotlight( 0xFFFFFF, 2, 12, Mth.PI/15, 0.3);
+                    const spotlight = new THREE.SpotLight( 0xFFFFFF, 2, 12, Mth.PI/15, 0.3);
                     //Creates a cone object to enhace the look of the light beam coming out of the torch
                     geometry = new THREE.CylinderBufferGeometry( 0.03, 1, 5, 32, true);
                     //Creates the radius of the cone and rotates it
