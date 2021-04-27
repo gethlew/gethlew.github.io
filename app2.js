@@ -135,7 +135,7 @@ class App{
                 //Enter code here
 
                 //Initialises new loader to load in model of flashlight
-                loader = new GLTFLoader().setPath('../../assets/');
+                loader = new GLTFLoader().setPath('../../libs/');
 
                 loader.load('flash-light.glb',(gltf) => {
                     //Original flashlight was too big, below code resizes the flashlight 
