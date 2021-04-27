@@ -104,6 +104,7 @@ class App{
             
         }
         
+        
         this.controller = this.renderer.xr.getController( 0 );
         this.controller.addEventListener( 'selectstart', onSelectStart );
         this.controller.addEventListener( 'selectend', onSelectEnd );
@@ -132,61 +133,37 @@ class App{
         switch ( data.targetRayMode ) {
             
             case 'tracked-pointer':
-                //Enter code here
 
-                //Initialises new loader to load in model of flashlight
-                loader = new GLTFLoader().setPath('../../assets/');
-
-                loader.load('flash-light.glb',(gltf) => {
-                    //Original flashlight was too big, below code resizes the flashlight 
-                    //to a better size.
-                    //The scene includes a camera and light but they arent needed
-                    //therefore only the flashlight model is included.
-                    const flashLight = gltf.scene.children[2];
-                    const scale = 0.6;
-                    flashLight.scale.set( scale, scale, scale );
-                    controller.add( flashlight );
-                    self.spotlight = new THREE.Group();
-
-                    //Creates a spotlight which emmits from the controller
-                    const spotlight = new THREE.Spotlight( 0xFFFFFF, 2, 12, Mth.PI/15, 0.3);
-                    //Creates a cone object to enhace the look of the light beam coming out of the torch
-                    geometry = new THREE.CylinderBufferGeometry( 0.03, 1, 5, 32, true);
-                    //Creates the radius of the cone and rotates it
-                    geometry.rotateX( Math.PI/2 );
-                    material = new SpotLightVolumetricMaterial();
-                    const cone = new THREE.Mesh( geometry, material );
-                    //Moves the position of the cone along the flashlight object 
-                    cone.translateZ( -2.6 );
-                    //Adds the cone to the spotlight group
+                loader = new GLTFLoader().setPath('../../libs/');
+        
+                loader.load( 'flash-light.glb',
+                    ( gltf ) => {
+                        const flashLight = gltf.scene.children[2];
+                        const scale = 0.6;
+                        flashLight.scale.set(scale, scale, scale);
+                        controller.add( flashLight );
+                        self.spotlight = new THREE.Group();
+                        const spotlight = new THREE.SpotLight( 0xFFFFFF, 2, 12, Math.PI/15, 0.3 );
+                        geometry = new THREE.CylinderBufferGeometry(0.03, 1, 5, 32, 5, true);
+                        geometry.rotateX( Math.PI/2 );
+                        material = new SpotLightVolumetricMaterial();
+                        const cone = new THREE.Mesh( geometry, material );
+                        cone.translateZ( -2.6 );
                     
-                    //Spotlight constructor includes 5 parameters
-                    //1 - Color - Int defining colour (hex)
-                    //2 - Intensity - Float defining how strong the light is
-                    //3 - Distance - How far the light travels before reaching 0
-                    //4 - Angle - The angle and how wide the light cone is.
-                    //5 - Penumbra - Defines how bright the center of the light is.
-                    spotlight.position.set(0,0,0);
-                    //Positions the spotlight to its target ray direction
-                    spotlight.target.position.set(0,0,-1);
-                    //Both spotlight.position and .target are added to group instance of spotlight.
-                    self.spotlight.add( spotlight.target );
-                    self.spotlight.add( spotlight );
-                    self.spotlight.add( cone );
-
-                    controller.add( self.spotlight );
-                    self.spotlight.visible = false;
-
-                    
-
-
-
-
-                }),
+                        spotlight.position.set(0,0,0);
+                        spotlight.target.position.set(0,0,-1);
+                        self.spotlight.add( spotlight.target );
+                        self.spotlight.add( spotlight );
+                        self.spotlight.add( cone );
+                        
+                        controller.add(self.spotlight);
+                        self.spotlight.visible = false;
+                    },
                     null,
-                    (error) => {
-                        console.error('An error ocurred');
+                    (error) =>  {
+                        console.error( 'An error occurred' );    
                     }
+                );
                 
                 break;
                 
