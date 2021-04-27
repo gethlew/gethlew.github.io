@@ -136,8 +136,9 @@ class App{
 
                 //Initialises new loader to load in model of flashlight
                 loader = new GLTFLoader().setPath('../../libs/');
-
-                loader.load('flash-light.glb',(gltf) => {
+        
+                loader.load( 'flash-light.glb',
+                    ( gltf ) => {
                     //Original flashlight was too big, below code resizes the flashlight 
                     //to a better size.
                     //The scene includes a camera and light but they arent needed
