@@ -146,7 +146,7 @@ class App{
                     const flashLight = gltf.scene.children[2];
                     const scale = 0.6;
                     flashLight.scale.set( scale, scale, scale );
-                    controller.add( flashlight );
+                    controller.add( flashLight );
                     self.spotlight = new THREE.Group();
 
                     //Creates a spotlight which emmits from the controller
