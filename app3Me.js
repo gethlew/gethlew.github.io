@@ -123,7 +123,7 @@ class App{
         const body = new CANNON.Body({ mass: 5, material: material});
         body.addShape(shape);
 
-        body.position.set(0,1,-3);
+        body.position.set(0, 1, -3);
         body.linearDamping = this.damping;
         this.world.add( body );
 
