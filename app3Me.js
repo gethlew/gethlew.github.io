@@ -89,7 +89,7 @@ class App{
         //However it will act as a collision object
         const groundBody = new CANNON.Body({ mass: 0 });
         //Rotates body by -90 degrees
-        groundBody.quaternion.setFromAxisAngle( new CANNON.Vec3(1,0,0), - Math.PI/2);
+        groundBody.quaternion.setFromAxisAngle( new CANNON.Vec3(1,0,0), -Math.PI/2);
         
         //Can add many different shapes to one body and stack them
         groundBody.addShape( groundShape );
