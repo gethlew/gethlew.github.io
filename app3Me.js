@@ -79,7 +79,7 @@ class App{
         this.world.broadphase = new CANNON.NaiveBroadphase();
         this.world.gravity.set(0, -10, 0);
 
-        this.helper = new CannonHelper(this.scnene, this.world);
+        this.helper = new CannonHelper(this.scene, this.world);
 
         //Creates a plane and applies it to the body object
         const groundShape = new CANNON.Plane();
