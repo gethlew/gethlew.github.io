@@ -70,25 +70,27 @@ class App{
     }
     
     initPhysics(){
-        this.world = new CannonHelper.World();
+        this.world = new CANNON.World();
 
         this.timeStep = 1.0/60.0;
         this.damping = 0.01;
 
         //Create new Cannon world and set it's gravity force
-        this.world.broadphase = new CannonHelper.NaiveBroadphase();
+        this.world.broadphase = new CANNON.NaiveBroadphase();
         this.world.gravity.set(0, -10, 0);
 
         this.helper = new CannonHelper(this.scnene, this.world);
 
+        //Creates a plane and applies it to the body object
+        const groundShape = new CANNON.Plane();
+
         //New object called 'groundBody' is created with a mass of 0
         //This means that the body is fixed and is not effected by gravity or other forces
         //However it will act as a collision object
-        const groundBody = new CannonHelper.Body({ mass: 0 });
+        const groundBody = new CANNON.Body({ mass: 0 });
         //Rotates body by -90 degrees
-        groundBody.quaternion.setFromAxisAngle( new CannonHelper.Vec3(1,0,0), - Math.PI/2);
-        //Creates a plane and applies it to the body object
-        const groundShape = new CannonHelper.Plane();
+        groundBody.quaternion.setFromAxisAngle( new CANNON.Vec3(1,0,0), - Math.PI/2);
+        
         //Can add many different shapes to one body and stack them
         groundBody.addShape( groundShape );
         this.world.add( groundBody );
@@ -113,9 +115,9 @@ class App{
         let shape;
 
         if (!box){
-            shape = new CannonHelper.Sphere(0.5);
+            shape = new CANNON.Sphere(0.5);
         }else{
-            shape = new CannonHelper.Box( new CannonHelper.Vec3(0.5,0.5,0.5));
+            shape = new CANNON.Box( new CANNON.Vec3(0.5,0.5,0.5));
         }
         const material = new CANNON.Material();
         const body = new CANNON.Body({ mass: 5, material: material});
