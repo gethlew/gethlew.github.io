@@ -44,10 +44,9 @@ class App{
         this.controls.update();
         
         this.stats = new Stats();
-        document.body.appendChild( this.stats.dom );
         
         this.initScene();
-        this.setupVR();
+        this.setupXR();
         
         this.renderer.setAnimationLoop( this.render.bind(this) );
         
@@ -71,69 +70,87 @@ class App{
     }
     
     initPhysics(){
-        this.world = new CANNON.World();
-		
-        this.dt = 1.0/60.0;
-	    this.damping = 0.01;
-		
-        this.world.broadphase = new CANNON.NaiveBroadphase();
-        this.world.gravity.set(0, -10, 0);
-  
-        this.helper = new CannonHelper( this.scene, this.world );
-		
-        const groundShape = new CANNON.Plane();
-        //const groundMaterial = new CANNON.Material();
-        const groundBody = new CANNON.Body({ mass: 0 });//, material: groundMaterial });
-        groundBody.quaternion.setFromAxisAngle( new CANNON.Vec3(1,0,0), -Math.PI/2);
-        groundBody.addShape(groundShape);
-        this.world.add(groundBody);
-        this.helper.addVisual(groundBody, 0xffaa00);
+        this.world = new CannonHelper.World();
 
-        // Joint body
+        this.timeStep = 1.0/60.0;
+        this.damping = 0.01;
+
+        //Create new Cannon world and set it's gravity force
+        this.world.broadphase = new CannonHelper.NaiveBroadphase();
+        this.world.gravity.set(0, -10, 0);
+
+        this.helper = new CannonHelper(this.scnene, this.world);
+
+        //New object called 'groundBody' is created with a mass of 0
+        //This means that the body is fixed and is not effected by gravity or other forces
+        //However it will act as a collision object
+        const groundBody = new CannonHelper.Body({ mass: 0 });
+        //Rotates body by -90 degrees
+        groundBody.quaternion.setFromAxisAngle( new CannonHelper.Vec3(1,0,0), - Math.PI/2);
+        //Creates a plane and applies it to the body object
+        const groundShape = new CannonHelper.Plane();
+        //Can add many different shapes to one body and stack them
+        groundBody.addShape( groundShape );
+        this.world.add( groundBody );
+        //Material colour
+        this.helper.addVisual( groundBody, 0xFFAA00 );
+
         const shape = new CANNON.Sphere(0.1);
-        this.jointBody = new CANNON.Body({ mass: 0 });
-        this.jointBody.addShape(shape);
+        this.jointBody = new CANNON.Body({mass: 0});
+        this.jointBody.addShape( shape );
+        //Body doesn't affect other rigid bodies in scene
         this.jointBody.collisionFilterGroup = 0;
+        //Body will not be affected by other rigid bodies.
         this.jointBody.collisionFilterMask = 0;
-        this.world.add(this.jointBody);
+        this.world.add( this.jointBody);
 
         this.box = this.addBody();
+
+        
     }  
     
     addBody(box=true){
         let shape;
+
         if (!box){
-            shape = new CANNON.Sphere(0.5);
+            shape = new CannonHelper.Sphere(0.5);
         }else{
-            shape = new CANNON.Box(new CANNON.Vec3(0.5,0.5,0.5));
+            shape = new CannonHelper.Box( new CannonHelper.Vec3(0.5,0.5,0.5));
         }
         const material = new CANNON.Material();
-        const body = new CANNON.Body({ mass: 5, material: material });
+        const body = new CANNON.Body({ mass: 5, material: material});
         body.addShape(shape);
 
-        body.position.set(0, 1, -3);
+        body.position.set(0,1,-3);
         body.linearDamping = this.damping;
-        this.world.add(body);
+        this.world.add( body );
 
-        this.helper.addVisual(body);
+        //Creates a ThreeJS mesh that matches the objects body
+        this.helper.addVisual( body );
 
         return body;
+
+        
     }
     
     addConstraint(pos, body){
         const pivot = pos.clone();
-        body.threemesh.worldToLocal(pivot);
-        
+        //Converts world coordinates to local coordinates
+        body.threemesh.worldToLocal( pivot );
+        //Copies the position of the body in world space
         this.jointBody.position.copy(pos);
- 
-        const constraint = new CANNON.PointToPointConstraint(body, pivot, this.jointBody, new CANNON.Vec3(0,0,0));
 
-        this.world.addConstraint(constraint);
-        
+        //Joins both bodies at the point where they have joined above
+        const constraint = new CANNON.PointToPointConstraint( body, pivot, 
+        this.jointBody, new CANNON.Vec3(0,0,0));
+
+        this.world.addConstraint( constraint );
+
         this.controller.userData.constraint = constraint;
+        
     }
     
-    setupVR(){
+    setupXR(){
         this.renderer.xr.enabled = true;
         
         const button = new VRButton( this.renderer );
@@ -251,8 +268,8 @@ class App{
 	render( ) {   
         this.stats.update();
         if (this.renderer.xr.isPresenting) this.handleController( this.controller );
-        this.world.step(this.dt);
-        this.helper.update( );
+        if (this.world) this.world.step(this.timeStep);
+        if (this.helper) this.helper.update( );
         this.renderer.render( this.scene, this.camera );
     }
 }
