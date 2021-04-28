@@ -72,7 +72,7 @@ class App{
     initPhysics(){
         this.world = new CANNON.World();
 
-        this.timeStep = 1.0/60.0;
+        this.dt = 1.0/60.0;
         this.damping = 0.01;
 
         //Create new Cannon world and set it's gravity force
