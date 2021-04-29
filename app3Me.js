@@ -99,6 +99,7 @@ class App{
         //Material colour
         this.helper.addVisual( groundBody, 0xFFAA00 );
 
+        /*
         const shape = new CANNON.Sphere(0.1);
         this.jointBody = new CANNON.Body({mass: 0});
         this.jointBody.addShape( shape );
@@ -107,7 +108,7 @@ class App{
         //Body will not be affected by other rigid bodies.
         this.jointBody.collisionFilterMask = 0;
         this.world.add( this.jointBody);
-
+        */
         this.box = this.addBody();
 
         
@@ -115,7 +116,7 @@ class App{
     
     addBody(box=true){
         let shape;
-        
+
         if (!box){
             shape = new CANNON.Sphere(0.5);
         }else{
