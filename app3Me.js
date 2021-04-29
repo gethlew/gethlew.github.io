@@ -113,7 +113,6 @@ class App{
     
     addBody(box=true){
         let shape;
-
         if (!box){
             shape = new CANNON.Sphere(0.5);
         }else{
