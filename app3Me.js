@@ -72,7 +72,7 @@ class App{
     initPhysics(){
         this.world = new CANNON.World();
 
-        this.dt = 1.0/60.0;
+        this.timeStep = 1.0/60.0;
         this.damping = 0.01;
 
         //Create new Cannon world and set it's gravity force
@@ -81,8 +81,7 @@ class App{
 
         this.helper = new CannonHelper(this.scene, this.world);
 
-        //Creates a plane and applies it to the body object
-        const groundShape = new CANNON.Plane();
+        
 
         //New object called 'groundBody' is created with a mass of 0
         //This means that the body is fixed and is not effected by gravity or other forces
@@ -90,7 +89,10 @@ class App{
         const groundBody = new CANNON.Body({ mass: 0 });
         //Rotates body by -90 degrees
         groundBody.quaternion.setFromAxisAngle( new CANNON.Vec3(1,0,0), -Math.PI/2);
-        
+
+
+        //Creates a plane and applies it to the body object
+        const groundShape = new CANNON.Plane();
         //Can add many different shapes to one body and stack them
         groundBody.addShape( groundShape );
         this.world.add( groundBody );
@@ -113,6 +115,7 @@ class App{
     
     addBody(box=true){
         let shape;
+        
         if (!box){
             shape = new CANNON.Sphere(0.5);
         }else{
