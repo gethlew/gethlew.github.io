@@ -176,7 +176,18 @@ class App{
     }
     
     getHitTestResults( frame ){
-        
+        const hitTestResults = frame.getHitTestResults( this.hitTestSource );
+
+        if (hitTestResults.length){
+            const referenceSpace = this.renderer.xr.getReferenceSpace();
+            const hit = hitTestResults[0];
+            const pose = hit.getPose( referenceSpace );
+
+            this.reticle.visible = true;
+            this.reticle.matrix.fromArray( pose.transform.matrix );
+        }else{
+            this.reticle.visible = false;
+        }
     }
 
     render( timestamp, frame ) {
