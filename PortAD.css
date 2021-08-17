@@ -122,6 +122,22 @@ body {font-family: Arial, Helvetica, sans-serif;
   
 }
 
+#project5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 50%;
+  top: 380%;
+  color: #000;
+  width: 30%;
+  height: 100%;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(255, 255, 255);
+
+  
+}
+
 
 #day1 {
   position: absolute;
@@ -455,6 +471,20 @@ body {font-family: Arial, Helvetica, sans-serif;
   
 }
 
+#project5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 15%;
+  top: 830%;
+  color: #000;
+  width: 550px;
+  height: 350px;
+  box-shadow: 10px 10px grey;;
+  
+}
+
 #project3 {
   position: absolute;
   border-radius: 25px;
@@ -569,7 +599,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   width: 90%;
   height: 100%;
-  top: 940%;
+  top: 1020%;
   left: 5%;
 }
 
@@ -772,6 +802,20 @@ body {font-family: Arial, Helvetica, sans-serif;
   color: #000;
   width: 450px;
   height: 350px;
+  box-shadow: 10px 10px grey;;
+  
+}
+
+#project5 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 10%;
+  top: 900%;
+  color: #000;
+  width: 250px;
+  height: 300px;
   box-shadow: 10px 10px grey;;
   
 }
@@ -981,6 +1025,20 @@ body {font-family: Arial, Helvetica, sans-serif;
 }
 
 #project4 {
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  left: 5%;
+  top: 880%;
+  color: #000;
+  width: 450px;
+  height: 350px;
+  box-shadow: 10px 10px grey;;
+  
+}
+
+#project5 {
   position: absolute;
   border-radius: 25px;
   border: 2px solid #000000;
@@ -1229,7 +1287,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   width: 90%;
   height: 120%;
-  top: 900%;
+  top: 1200%;
   left: 5%;
 }
 
