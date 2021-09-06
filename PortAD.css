@@ -101,8 +101,8 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 #d1{
   position: absolute;
-  left: 15%;
-  top: 160%;
+  left: 17%;
+  top: 150%;
   color: #000;
   width: 70%;
   height: 150%;
@@ -112,7 +112,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 #d2{
   position: absolute;
   left: 7%;
-  top: 190%;
+  top: 175%;
   color: #000;
   width: 70%;
   height: 150%;
@@ -132,7 +132,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 #d4{
   position: absolute;
   left: 23%;
-  top: 190%;
+  top: 205%;
   color: #000;
   width: 70%;
   height: 150%;
@@ -142,7 +142,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 #d5{
   position: absolute;
   left: 7%;
-  top: 220%;
+  top: 225%;
   color: #000;
   width: 70%;
   height: 150%;
@@ -152,7 +152,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 #d6{
   position: absolute;
   left: 15%;
-  top: 220%;
+  top: 230%;
   color: #000;
   width: 70%;
   height: 150%;
@@ -161,8 +161,8 @@ body {font-family: Arial, Helvetica, sans-serif;
 
 #d7{
   position: absolute;
-  left: 23%;
-  top: 220%;
+  left: 33%;
+  top: 230%;
   color: #000;
   width: 70%;
   height: 150%;

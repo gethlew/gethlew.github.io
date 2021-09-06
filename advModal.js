@@ -57,3 +57,23 @@ var modalAdv3 = document.getElementById("advModal3");
       modalAdv3.style.display = "none";
     }
   }
+  
+var modalAdv4 = document.getElementById("advModal4");
+
+  var btn = document.getElementById("btn4");
+
+  var span = document.getElementsByClassName("closeADV4")[0];
+
+  btn.onclick = function() {
+    modalAdv4.style.display = "block";
+  }
+
+  span.onclick = function() {
+      modalAdv4.style.display = "none";
+    }
+
+  window.onlick = function(event) {
+    if (event.target == modal) {
+      modalAdv4.style.display = "none";
+    }
+  }
