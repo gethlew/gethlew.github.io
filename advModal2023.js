@@ -1,80 +1,80 @@
-var modalAdv11 = document.getElementById("advModal11");
+var modalAdv27 = document.getElementById("advModal27");
 
-  var btn = document.getElementById("btn11");
+  var btn = document.getElementById("btn27");
 
-  var span = document.getElementsByClassName("closeADV11")[0];
+  var span = document.getElementsByClassName("closeADV27")[0];
 
   btn.onclick = function() {
-    modalAdv11.style.display = "block";
+    modalAdv27.style.display = "block";
   }
 
   span.onclick = function() {
-      modalAdv11.style.display = "none";
+      modalAdv27.style.display = "none";
     }
 
   window.onlick = function(event) {
     if (event.target == modal) {
-      modalAdv11.style.display = "none";
+      modalAdv27.style.display = "none";
     }
   }
 
-var modalAdv12 = document.getElementById("advModal12");
+var modalAdv28 = document.getElementById("advModal28");
 
-  var btn = document.getElementById("btn12");
+  var btn = document.getElementById("btn28");
 
-  var span = document.getElementsByClassName("closeADV12")[0];
+  var span = document.getElementsByClassName("closeADV28")[0];
 
   btn.onclick = function() {
-    modalAdv12.style.display = "block";
+    modalAdv28.style.display = "block";
   }
 
   span.onclick = function() {
-      modalAdv12.style.display = "none";
+      modalAdv28.style.display = "none";
     }
 
   window.onlick = function(event) {
     if (event.target == modal) {
-      modalAdv12.style.display = "none";
+      modalAdv28.style.display = "none";
     }
   }
 
-var modalAdv13 = document.getElementById("advModal13");
+var modalAdv29 = document.getElementById("advModal29");
 
-  var btn = document.getElementById("btn13");
+  var btn = document.getElementById("btn29");
 
-  var span = document.getElementsByClassName("closeADV13")[0];
+  var span = document.getElementsByClassName("closeADV29")[0];
 
   btn.onclick = function() {
-    modalAdv13.style.display = "block";
+    modalAdv29.style.display = "block";
   }
 
   span.onclick = function() {
-      modalAdv13.style.display = "none";
+      modalAdv29.style.display = "none";
     }
 
   window.onlick = function(event) {
     if (event.target == modal) {
-      modalAdv13.style.display = "none";
+      modalAdv29.style.display = "none";
     }
   }
   
-var modalAdv14 = document.getElementById("advModal14");
+var modalAdv30 = document.getElementById("advModal30");
 
-  var btn = document.getElementById("btn14");
+  var btn = document.getElementById("btn30");
 
-  var span = document.getElementsByClassName("closeADV14")[0];
+  var span = document.getElementsByClassName("closeADV30")[0];
 
   btn.onclick = function() {
-    modalAdv14.style.display = "block";
+    modalAdv30.style.display = "block";
   }
 
   span.onclick = function() {
-      modalAdv14.style.display = "none";
+      modalAdv30.style.display = "none";
     }
 
   window.onlick = function(event) {
     if (event.target == modal) {
-      modalAdv14.style.display = "none";
+      modalAdv30.style.display = "none";
     }
   }
 
