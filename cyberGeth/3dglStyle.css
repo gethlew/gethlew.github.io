@@ -1,0 +1,10 @@
+body{
+    background-color: #07c1c8;
+}
+
+@media (min-width: 788px) {
+    .glPrinting_Header{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
