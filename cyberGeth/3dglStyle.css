@@ -8,3 +8,11 @@ body{
         margin-right: 25%;
     }
 }
+
+@media (max-width: 788px) {
+    .glPrinting_Header{
+        margin-left: 25%;
+        margin-right: 25%;
+        height: 25%;
+    }
+}
