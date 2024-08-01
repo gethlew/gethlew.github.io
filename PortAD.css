@@ -600,6 +600,19 @@ html{
   max-width: 70%;
 }
 
+.dgl_nav{
+    border-radius: 25px;
+    margin: 10px;
+    border: 2px solid #000000;
+    color: #000 !important;
+    box-shadow: 5px 5px grey;
+    background-color: rgb(255, 255, 255);
+}
+
+.dgl_nav-link{
+  color: #000 !important;
+}
+
 @media screen and (max-width: 1250px) {
 
   #about {
