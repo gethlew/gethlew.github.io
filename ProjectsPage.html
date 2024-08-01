@@ -4,20 +4,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <link rel="stylesheet" href="PortAD.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <div class="container">
     <img src="Mount.jpg" alt="HTML5 Icon" width=70% height=70%>
     <div class="name">David Gethin Lewis</div>
-    <div class="role">Web Developer | Game Developer</div>
-  </head>
+    <div class="role">Game Developer | VR Developer</div>
+   
+</head>
 
 <br>
 
-  <div class="navbar">
-    <a href='https://gethlew.github.io/index.html'>Home</a>
-    <a href='https://gethlew.github.io/ProjectsPage.html'>Projects</a>
-    <a href="https://gethlew.github.io/contact.html">Contact</a>
-  </div>
-
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="https://gethlew.github.io/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://gethlew.github.io/ProjectsPage.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://gethlew.github.io/contact.html">Contact</a>  
+        </li>
+      </ul>
 
 <br>
 
@@ -27,9 +35,82 @@
 <br>
 </p>
 
-<div id="splodModal" class="modal">
-  <div class="modal-content">
+<div id="splodModal" class="modal popModal">
+  <div class="modal-content popModCont">
     <span class="closeSpl">&times;</span>
+  <h3>Intro</h3>
+  <p>
+    As I want to pursue a career in bothj game development and vr development, to better
+    my understanding of VR development specfically, I decided to start developing a game
+    within Meta's own app, Horizons Worlds
+  </p>
+
+  <h3>Testing the inital concept</h3>
+  <p>
+    The first version of the game included a black backdrop with rectangles of various colours acting as objects the player had to avoid. 
+    The rectangles could also move to make it harder for the player. 
+    The more and more I worked on the game the more I disliked it. 
+    I was unsure what needed changing so I asked some friends for some feedback on what to improve. 
+    One of them said the game looked lifeless and I agreed. The games lighting looked didn’t look correct against the black background. 
+    Using rectangles as obstacles also seemed incorrect considering the game is about controlling a space rocket. 
+    The game also ad large yellow rectangles surrounding the game’s border. This made the game feel very small.
+  </p>
+  <img src="originalGame.jpg" alt="HTML5 Icon" id="gameImg">
+
+  <h3>Current version</h3>
+  <p>
+    The version I’m currently developing looks very different compared to the previous version. 
+    The background is now no longer a solid colour, but rather a collection of 3D models placed together to make the game seem like it’s in outer space. 
+    I also removed the rectangles which were surrounding the border to make the game look bigger. 
+    Instead of rectangles acting like obstacles for the player to avoid, I modelled some asteroids in blender to fit with the game’s “space” look. Unlike the previous version, I have also added enemies to the game. These can be seen further down the page. 
+    </br>
+    </br>
+    (click on the image below to watch the game in action)
+  </p>
+  <a href='https://www.youtube.com/watch?v=cAZq79RoN_8'><img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg"></a>
+
+  <h3>Main Menu</h3>
+  <p>From here the player is able to play the game from the first level by clicking on the (Play) option. 
+    When the player clicks on the (level select) option they are able to select 4 different difficulty settings each with their own unique set of levels. 
+    In the current build of the game, I have only created levels for the first two difficulties. 
+    When the player accesses a difficulty setting, they are able to see a score for each of the levels they have completed in the form of stars. 
+    The stars also update if they improve their score.
+
+  </p>
+  <img src="mainMenu.PNG" alt="HTML5 Icon" id="gameImg">
+
+  <h3>Playing a level</h3>
+  <p>
+    The aim of the game is to move the rocket from one side of the screen to the other while avoiding objects and collecting stars. 
+    Once the user completes a level within the game, they are given the option to continue playing, or to go back to the game’s main menu. 
+    If the player plays the game on a PC they can use the arrow keys or w,a,s,d, keys to move the rocket. 
+    On a mobile device UI buttons appear on screen to allow players to play the game on a mobile device. 
+
+  </p>
+  <img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg">
+
+  <h3>Enemies</h3>
+  <p>
+    Throughout the game, there are various enemies the player can come across. 
+  </p>
+  <h4>HIVE</h4>
+  <p>
+    The hive is a circular shaped enemy which rotates and shoots out smaller versions of itself to attack the player. 
+    When the player comes in contact with this enemy, they lose 1 heart of health.
+  </p>
+  <img src="Hive.png" alt="HTML5 Icon" id="gameImg">
+  <h4>TADPOD</h4>
+  <p>
+    Very small rocket which is shaped like a tadpole. 
+    It fires small streams of bullets towards the player which removes 1 heart of health.
+  </p>
+  <img src="TADPOD.png" alt="HTML5 Icon" id="gameImg">
+
+  <h4>Items/power-ups</h4>
+  <p>
+    All assets visible in the game were created by me using blender. The game is written in Unity C#.
+    The game uses touch controls but also a keyboard and mouse which allows the game to be played on a mobile device or a computer. 
+  </p>
   </div>
 </div>
 
@@ -45,9 +126,9 @@
   </p>
 
   
-<div id="wgModal" class="modal">
+<div id="wgModal" class="modal popModal">
 
-  <div class="modal-content">
+  <div class="modal-content popModCont">
     <span class="closeWg">&times;</span>
     <h1>Welsh game for children</h1>
   <p>
@@ -112,86 +193,86 @@
     <!-- <a href="https://github.com/gethlew/project-spd"><img src="GitHub-Mark-64px.png" alt="HTML5 Icon" width=15% height=15% style="float: right;" ></p></a> -->
     </p>
 
-    <div id="avModal" class="modal">
+    <div id="avModal" class="modal popModal">
 
-      <div class="modal-content">
+      <div class="modal-content popModCont">
         <span class="closeAv">&times;</span>
         <h3>Intro</h3>
-    <p>
-      As I want to pursue a career in game development, after graduating in the first half of 2020, I started creating my own game/games. 
-      The first game I created was Asteroid Void. 
-      My original plan for the game looks very different from the current version of the game.
-    </p>
+        <p>
+          As I want to pursue a career in game development, after graduating in the first half of 2020, I started creating my own game/games. 
+          The first game I created was Asteroid Void. 
+          My original plan for the game looks very different from the current version of the game.
+        </p>
 
-    <h3>First Version</h3>
-    <p>
-      The first version of the game included a black backdrop with rectangles of various colours acting as objects the player had to avoid. 
-      The rectangles could also move to make it harder for the player. 
-      The more and more I worked on the game the more I disliked it. 
-      I was unsure what needed changing so I asked some friends for some feedback on what to improve. 
-      One of them said the game looked lifeless and I agreed. The games lighting looked didn’t look correct against the black background. 
-      Using rectangles as obstacles also seemed incorrect considering the game is about controlling a space rocket. 
-      The game also ad large yellow rectangles surrounding the game’s border. This made the game feel very small.
-    </p>
-    <img src="originalGame.jpg" alt="HTML5 Icon" id="gameImg">
+        <h3>First Version</h3>
+        <p>
+          The first version of the game included a black backdrop with rectangles of various colours acting as objects the player had to avoid. 
+          The rectangles could also move to make it harder for the player. 
+          The more and more I worked on the game the more I disliked it. 
+          I was unsure what needed changing so I asked some friends for some feedback on what to improve. 
+          One of them said the game looked lifeless and I agreed. The games lighting looked didn’t look correct against the black background. 
+          Using rectangles as obstacles also seemed incorrect considering the game is about controlling a space rocket. 
+          The game also ad large yellow rectangles surrounding the game’s border. This made the game feel very small.
+        </p>
+        <img src="originalGame.jpg" alt="HTML5 Icon" id="gameImg">
 
-    <h3>Current version</h3>
-    <p>
-      The version I’m currently developing looks very different compared to the previous version. 
-      The background is now no longer a solid colour, but rather a collection of 3D models placed together to make the game seem like it’s in outer space. 
-      I also removed the rectangles which were surrounding the border to make the game look bigger. 
-      Instead of rectangles acting like obstacles for the player to avoid, I modelled some asteroids in blender to fit with the game’s “space” look. Unlike the previous version, I have also added enemies to the game. These can be seen further down the page. 
-      </br>
-      </br>
-      (click on the image below to watch the game in action)
-    </p>
-    <a href='https://www.youtube.com/watch?v=cAZq79RoN_8'><img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg"></a>
+        <h3>Current version</h3>
+        <p>
+          The version I’m currently developing looks very different compared to the previous version. 
+          The background is now no longer a solid colour, but rather a collection of 3D models placed together to make the game seem like it’s in outer space. 
+          I also removed the rectangles which were surrounding the border to make the game look bigger. 
+          Instead of rectangles acting like obstacles for the player to avoid, I modelled some asteroids in blender to fit with the game’s “space” look. Unlike the previous version, I have also added enemies to the game. These can be seen further down the page. 
+          </br>
+          </br>
+          (click on the image below to watch the game in action)
+        </p>
+        <a href='https://www.youtube.com/watch?v=cAZq79RoN_8'><img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg"></a>
 
-    <h3>Main Menu</h3>
-    <p>From here the player is able to play the game from the first level by clicking on the (Play) option. 
-      When the player clicks on the (level select) option they are able to select 4 different difficulty settings each with their own unique set of levels. 
-      In the current build of the game, I have only created levels for the first two difficulties. 
-      When the player accesses a difficulty setting, they are able to see a score for each of the levels they have completed in the form of stars. 
-      The stars also update if they improve their score.
+        <h3>Main Menu</h3>
+        <p>From here the player is able to play the game from the first level by clicking on the (Play) option. 
+          When the player clicks on the (level select) option they are able to select 4 different difficulty settings each with their own unique set of levels. 
+          In the current build of the game, I have only created levels for the first two difficulties. 
+          When the player accesses a difficulty setting, they are able to see a score for each of the levels they have completed in the form of stars. 
+          The stars also update if they improve their score.
 
-    </p>
-    <img src="mainMenu.PNG" alt="HTML5 Icon" id="gameImg">
+        </p>
+        <img src="mainMenu.PNG" alt="HTML5 Icon" id="gameImg">
 
-    <h3>Playing a level</h3>
-    <p>
-      The aim of the game is to move the rocket from one side of the screen to the other while avoiding objects and collecting stars. 
-      Once the user completes a level within the game, they are given the option to continue playing, or to go back to the game’s main menu. 
-      If the player plays the game on a PC they can use the arrow keys or w,a,s,d, keys to move the rocket. 
-      On a mobile device UI buttons appear on screen to allow players to play the game on a mobile device. 
+        <h3>Playing a level</h3>
+        <p>
+          The aim of the game is to move the rocket from one side of the screen to the other while avoiding objects and collecting stars. 
+          Once the user completes a level within the game, they are given the option to continue playing, or to go back to the game’s main menu. 
+          If the player plays the game on a PC they can use the arrow keys or w,a,s,d, keys to move the rocket. 
+          On a mobile device UI buttons appear on screen to allow players to play the game on a mobile device. 
 
-    </p>
-    <img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg">
+        </p>
+        <img src="currentGame.PNG" alt="HTML5 Icon" id="gameImg">
 
-    <h3>Enemies</h3>
-    <p>
-      Throughout the game, there are various enemies the player can come across. 
-    </p>
-    <h4>HIVE</h4>
-    <p>
-      The hive is a circular shaped enemy which rotates and shoots out smaller versions of itself to attack the player. 
-      When the player comes in contact with this enemy, they lose 1 heart of health.
-    </p>
-    <img src="Hive.png" alt="HTML5 Icon" id="gameImg">
-    <h4>TADPOD</h4>
-    <p>
-      Very small rocket which is shaped like a tadpole. 
-      It fires small streams of bullets towards the player which removes 1 heart of health.
-    </p>
-    <img src="TADPOD.png" alt="HTML5 Icon" id="gameImg">
+        <h3>Enemies</h3>
+        <p>
+          Throughout the game, there are various enemies the player can come across. 
+        </p>
+        <h4>HIVE</h4>
+        <p>
+          The hive is a circular shaped enemy which rotates and shoots out smaller versions of itself to attack the player. 
+          When the player comes in contact with this enemy, they lose 1 heart of health.
+        </p>
+        <img src="Hive.png" alt="HTML5 Icon" id="gameImg">
+        <h4>TADPOD</h4>
+        <p>
+          Very small rocket which is shaped like a tadpole. 
+          It fires small streams of bullets towards the player which removes 1 heart of health.
+        </p>
+        <img src="TADPOD.png" alt="HTML5 Icon" id="gameImg">
 
-    <h4>Items/power-ups</h4>
-    <p>
-      All assets visible in the game were created by me using blender. The game is written in Unity C#.
-      The game uses touch controls but also a keyboard and mouse which allows the game to be played on a mobile device or a computer. 
-    </p>
-    <img src="PUPS.png" alt="HTML5 Icon" id="gameImg">
-      </div>
-    </div>
+        <h4>Items/power-ups</h4>
+        <p>
+          All assets visible in the game were created by me using blender. The game is written in Unity C#.
+          The game uses touch controls but also a keyboard and mouse which allows the game to be played on a mobile device or a computer. 
+        </p>
+        <img src="PUPS.png" alt="HTML5 Icon" id="gameImg">
+          </div>
+        </div>
   
 
 <!-- <p id="project4">3D Advent Calendar<br>

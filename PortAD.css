@@ -1,6 +1,6 @@
 * {box-sizing: border-box}
 body {font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(122, 216, 233);
+  background-color: rgb(122, 216, 233) !important;
 }
 
 /* The Modal (background) */
@@ -50,6 +50,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   height: 30%;
 }
 
+html{
+  background-color: rgb(122, 216, 233);
+}
+
 .name {
   position: absolute;
   top: 30%;
@@ -75,6 +79,10 @@ body {font-family: Arial, Helvetica, sans-serif;
   width: 40%;
   text-align: center;
   overflow: auto;
+}
+
+.navbar-nav{
+  background-color: #000000;
 }
 
 .navbar a:hover {
@@ -583,6 +591,15 @@ body {font-family: Arial, Helvetica, sans-serif;
   box-shadow: 10px 10px grey;
   background-color: rgb(255, 255, 255);
 }
+
+.popModal{
+  color: black;
+}
+
+.popModCont{
+  max-width: 70%;
+}
+
 @media screen and (max-width: 1250px) {
 
   #about {
