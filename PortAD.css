@@ -536,8 +536,8 @@ html{
 
 #bottom{
     position: absolute;
-    border-radius: 25px;
-    border: 2px solid #000000;
+    /* border-radius: 25px;
+    border: 2px solid #000000; */
     padding: 20px;
     left: 15%;
     color: rgb(255, 255, 255);
@@ -545,8 +545,8 @@ html{
     width: 70%;
     height: 100%;
     top: 500%;
-    box-shadow: 10px 10px grey;
-    background-color: rgb(122, 216, 233);
+    /* box-shadow: 10px 10px grey;
+    background-color: rgb(122, 216, 233); */
 }
 
 #bottomAdv{
