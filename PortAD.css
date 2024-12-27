@@ -3,6 +3,51 @@ body {font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(122, 216, 233) !important;
 }
 
+/* image overlay/text background */
+/* .text_block{
+  display: block;
+  height: 100px;
+  width: 70%;
+  background-color: black;
+  margin-left: 15%;
+} */
+
+/* .text_block {
+  display: block;
+  position: fixed;
+  height: 19%;
+  width: 66%;
+  background-color: black;
+  margin-left: 14%;
+  margin-top: -15%;
+  border-radius: 2rem;
+} */
+
+/* .text_block {
+  display: block;
+  position: absolute;
+  opacity: 60%;
+  height: 38%;
+  width: 46%;
+  background-color: black;
+  margin-left: 26%;
+  margin-top: -17%;
+  border-radius: 2rem;
+} */
+
+.text_block{
+  display: block;
+  position: absolute;
+  opacity: 60%;
+  height: 38%;
+  width: 46%;
+  background-color: black;
+  margin-left: 26%;
+  margin-top: -13%;
+  border-radius: 2rem;
+}
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -614,6 +659,18 @@ html{
 }
 
 @media screen and (max-width: 1250px) {
+  
+  .text_block {
+    display: block;
+    position: absolute;
+    opacity: 60%;
+    height: 39%;
+    width: 50%;
+    background-color: black;
+    margin-left: 24%;
+    margin-top: -13%;
+    border-radius: 2rem;
+  }
 
   #about {
     position: absolute;
@@ -698,6 +755,18 @@ html{
 */
 }
 @media screen and (max-width: 1000px) {
+
+  .text_block {
+    display: block;
+    position: absolute;
+    opacity: 60%;
+    height: 38%;
+    width: 46%;
+    background-color: black;
+    margin-left: 26%;
+    margin-top: -17%;
+    border-radius: 2rem;
+  }
 
   #about {
     position: absolute;
